@@ -125,6 +125,19 @@
                         <span class="nav-main-link-name">Payroll Per Driver</span>
                     </a>
                 </li>
+                <li class="nav-main-heading">Utilities</li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="/util/ext-links">
+                        <i class="nav-main-link-icon fa fa-external-link-alt"></i>
+                        <span class="nav-main-link-name">Favorite Websites</span>
+                    </a>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="{{ route('util.download-data') }}">
+                        <i class="nav-main-link-icon fa fa-download"></i>
+                        <span class="nav-main-link-name">Download Data</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- END Side Navigation -->
