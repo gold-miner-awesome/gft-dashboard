@@ -156,8 +156,6 @@ class UtilController extends Controller
         $exports = new HistoricalDataExport($search);
         return Excel::download($exports, 'HD_WK' . $search->from_week_num . '-' . $search->from_year_num 
                                         . '_WK' . $search->to_week_num . '-' . $search->to_year_num . '.xlsx');
-
-
     }
     public function view_data(Request $request)
     {
@@ -201,7 +199,7 @@ class UtilController extends Controller
                     break;
             }
         }
-        return view('util.download_data.search_form', [
+        return view('util.download_data.view_data', [
             'search'        => $search,
             'data'          => $data,
             'compare_list'  => $compare_list,
